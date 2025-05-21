@@ -1,8 +1,11 @@
 import { Box, TextField, Button, Typography } from "@mui/material";
 import paper from './assets/paper.png';
-import './App.css';
+import { useNavigate } from 'react-router-dom'; 
 
 function Main() {
+
+  const navigate = useNavigate();
+
   return (
     <Box sx={{ height: "100vh",  display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: 'rgba(255, 255, 255, 0)',}}>
       <Box sx={{ position: 'absolute', backgroundImage: `url(${paper})`, backgroundSize: '100% 100%', backgroundPosition: 'center',
@@ -65,6 +68,7 @@ function Main() {
             <Button
               variant="contained"
               fullWidth
+              onClick={() => navigate('/room')}
               sx={{
                 py: 1.2,
                 fontWeight: 'bold',
