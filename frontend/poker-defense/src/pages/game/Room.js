@@ -19,7 +19,7 @@ function Room() {
               />
               <button onClick={() => setIsReady(!isReady)}>Ready</button>
             </div>
-            <GameButton></GameButton>
+            <GameButton text="Collections" ></GameButton>
         </div>
     </div>
   );

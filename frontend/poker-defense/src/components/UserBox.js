@@ -5,13 +5,14 @@ function UserBox({ imgSrc, username, userId, isReady }) {
     <div
       style={{
         width: '200px', height: '200px',
-        border: '2px solid #ccc',
+        border: '2px solid black',
         borderRadius: '8px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'flex-end',  
         margin: 'auto', 
-        position: 'relative'
+        position: 'relative',
+        backgroundColor: '#F2D7A8' 
       }}
     >
       <img
